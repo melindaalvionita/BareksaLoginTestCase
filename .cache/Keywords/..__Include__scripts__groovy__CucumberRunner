@@ -1,0 +1,14 @@
+{
+  "keywordFileContentHash": "9A1AE44801455BF0FE4B635C68B6F57D",
+  "keywordClasses": [
+    {
+      "name": "MyRunner",
+      "keywordMethods": []
+    },
+    {
+      "name": "CucumberRunner",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
