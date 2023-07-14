@@ -41,7 +41,6 @@ Feature: Login functionality
     And Click on login button
     Then User should see an error message wajib diisi below Email and Password field
 
-
   Scenario: Forgot password functionality
 
     When User click on the Lupa Password Button
