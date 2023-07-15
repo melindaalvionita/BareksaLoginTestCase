@@ -47,7 +47,7 @@ class LoginStepDefinition {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	
+
 	/* TC01 */
 	@Given("User navigates to login page")
 	def NavigateToLoginPage() {
@@ -113,7 +113,6 @@ class LoginStepDefinition {
 	def errorMessageFormatEmailSalah() {
 		/*println ("\n User should see an error message Format email salah")*/
 		Mobile.verifyElementVisible('Object Repository/Login_InvalidFormatEmail/android.widget.TextView - Format email salah', 5)
-
 	}
 
 	/* TC04 */
@@ -130,20 +129,19 @@ class LoginStepDefinition {
 		//Mobile.verifyElementVisible('Object Repository/BlankLoginBareksa/android.widget.TextView - Wajib diisi', 5)
 		//Mobile.verifyElementVisible('Object Repository/BlankLoginBareksa/android.widget.TextView - Wajib diisi (1)', 5)
 	}
-		
 
-		/* TC05 */
 
-		@When("User click on the Lupa Password Button")
-		def clickLupaPassword {
-			/*println ("\n User click on the Lupa Password Button")*/
-			Mobile.tap(findTestObject('Object Repository/Lupa_Password/android.widget.TextView - Lupa password'), 5)
-		}
+	/* TC05 */
 
-		@Then("User should be redirected to the password recovery page")
-		def verifyLupaPasswordPage() {
-			/*println ("\n User should be redirected to the password recovery page")*/
-			Mobile.verifyElementText('Object Repository/Lupa_Password/android.widget.TextView - Lupa Password (1)', 10)
-
-		}
+	@When("User click on the Lupa Password Button")
+	def clickLupaPassword {
+		/*println ("\n User click on the Lupa Password Button")*/
+		Mobile.tap(findTestObject('Object Repository/Lupa_Password/android.widget.TextView - Lupa password'), 5)
 	}
+
+	@Then("User should be redirected to the password recovery page")
+	def verifyLupaPasswordPage() {
+		/*println ("\n User should be redirected to the password recovery page")*/
+		Mobile.verifyElementText('Object Repository/Lupa_Password/android.widget.TextView - Lupa Password (1)', 10)
+	}
+}
